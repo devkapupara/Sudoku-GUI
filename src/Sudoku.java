@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Sudoku
 {
-    public int[][] puz;
+    private int[][] puz;
     private int size;
     private int box_r;
     private int box_c;
@@ -108,7 +108,7 @@ public class Sudoku
     {
         int r = 0;
         int c = 0;
-        String repeatedStar = new String(new char[2*puz.length+6]).replace('\0', '-');
+        String repeatedStar = new String(new char[3*puz.length-2]).replace('\0', '-');
         String s = "";
         for (int[] i: puz)
         {

@@ -1,7 +1,5 @@
 package Sudoku;
 
-import oracle.jvm.hotspot.jfr.JFR;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -59,8 +57,8 @@ public class MainFrame extends JFrame
         });
 
         bottomToolBar.add(solveBtn);
-        bottomToolBar.add(quitBtn);
         bottomToolBar.add(reloadBtn);
+        bottomToolBar.add(quitBtn);
 
         puzzle = new JTextArea();
         puzzle.setText(defaultText());
